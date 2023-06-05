@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=League+Spartan:wght@400;600;800&family=Montserrat:wght@300;500;700&family=Poppins:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=League+Spartan:wght@400;600;800&family=Montserrat:wght@300;500;700&display=swap');
+/* Base styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ html{
+
+    font-size: 62.5%;
+ } 
+body{
+    font-style: normal;
+    font-family: spartan;
+    max-width: 100vw;
+    background: #f5f5f5;
+}
+:root{
+    --bg-color:#BB265E;
+    --color:#FFFFFF;
+    --font-weight:400;
+    --font-family:'Poppins';
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: black;
+}
+h1,h2,p{
+    margin: 1.5rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+   
+    height: auto;
+    object-fit: cover;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    margin-top: 2rem;
+    object-fit: cover;
+}
+nav{
+    padding-left: 1rem;
+}
+ li{
+    margin-left: 3rem;
+    list-style: none;
+    display: inline;
+}
+
+
+.btn-outline-success{
+    width: 13rem;
+    height: 5rem;
+    border: none;
+    text-align: left;
+    padding: 1rem;
+    float: right;
+}
+
+.bx-arrow-back{
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    
+}
+.solo-buttons,.hero-img{
+    margin-left: 5.5rem;
+}
+.solo-buttons h2{
+    font-family: var(--font-family);
+    padding-left: 2rem;
+}
+.bx-chevron-left{  
+    font-size: x-large;
+    color:black ;
+    padding-left: 3rem;
+}
+.solo-buttons span{
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: #333333;
+}
+.solo-buttons{
+    display: flex;
+    align-items: center;
+     
+}
+.first-view-port{
+    display: flex;
+}
+.hero-img{
+    
+    background-image: url("asset/img.jpg");
+    background-size: cover;
+    width: 75rem;
+    height: 49rem;
+    object-fit:cover;
+}
+.btn1,.btn2{
+    
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    border: none;
+    color: var(--color);
+    padding: .4rem;
+    gap: .4rem;
+    width: 9.8rem;
+    height: 3rem;
+    border-radius: .3rem;
+    backdrop-filter: blur(.2rem);
+}
+.btn1{
+    margin: 1rem 0 0 2rem;
+    background: var(--bg-color);
+}
+.btn2{
+    margin-left: .5rem;
+    background: black;
+}
+.car-award{
+    color:var(--color);
+    padding: 1rem 0 0 1rem;
+    margin-right: 1rem;
+    width: 18.1rem;
+    height: 23.1rem;
+    background-image: url("asset/febric.jpg");
+    background-size: contain;
+    float: right;
+	clip-path: polygon(20% 0%, 0 0, 0 52%, 0% 80%, 0 100%, 52% 80%, 100% 100%, 100% 80%, 100% 47%, 100% 0, 80% 0%, 48% 0);
+}
+.hero-img h2,h3{
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    line-height: 100.5%;
+    text-transform: uppercase;
+}
+.hero-img h2{
+    font-weight: 700;
+    color: var(--color);
+}
+.hero-img h3{
+    font-weight: var(--font-weight);
+    margin-top: -1rem;
+}
+.car-award span{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+.car-award hr{
+    border: .2rem solid var(--color);
+    margin: -1rem 1rem 0 0;
+}
+.car-award li{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 110.5%;
+    margin-left: 0;
+}
+.car-name{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 110.5%;
+    text-transform: uppercase;
+}
+.bx-chevron-left, .bx-chevron-right{color: white;font-size: 5rem;}
+.bx-chevron-left{position: relative;top: 50%; left: -35%;}
+.bx-chevron-right{position: relative;top: 50%; right: -52%;}
+
+.small-images{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: .3rem;
+    width: 16.4rem;
+    height: 3.7rem;
+}
+.ext-btn,.int-btn{
+    font-size: 1.7rem;
+    width: 8.1rem;
+    height: 3.7rem;
+    backdrop-filter: blur(.2rem);
+    color: var(--color);
+    border: none;
+    border-radius: .3rem;
+}
+.ext-btn{
+    
+    background: var(--bg-color);
+    
+}
+.int-btn{
+    background: black;
+
+}
+.small-images img{
+    width: 16.4rem;
+    height: 10.2rem;
+    border-radius: .3rem;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+.car-detial{
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    isolation: isolate;
+    width: 35rem;
+    height: 53rem;
+    background: rgb(222, 221, 221);
+    border-radius: .8rem;
+    padding:2rem 1rem;
+    margin-left: 1rem;
+}
+.car-detial span,h2{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+   
+    line-height: 2.1rem;
+    color: #010104;
+    
+}
+.car-detial span{
+     font-size: 1.4rem;
+     opacity: 0.5;
+}
+.car-detial h1{
+    font-size: 2.7rem;
+    margin-top: -2.5rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+.car-detial h2{
+   font-size: 2.4rem;
+   margin-top: -3.5rem;
+   opacity: 0.7;
+}
+.dealer-name{
+    display: flex;
+    flex-direction: row;
+}
+.empty-div{
+    width: 11rem;
+    height: 9.5rem;
+    background: var(--color);
+    border-radius: .5rem;
+}
+.dealer-name h3{
+    text-transform: capitalize;
+   
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+
+.stars .bxs-star,.bxs-star-half{
+    font-size: 2rem;
+}
+
+.stars{
+    margin-left: 3rem;
+    line-height: 1.8rem;
+}
+
+.sell-btn{
+    font-size: 1.5rem;
+    padding: 0 .4rem;
+    gap: 1rem;
+    width: 4.6rem;
+    height: 2.1rem;
+    background: #FFA903;
+    border-radius: .3rem;
+    border: none;
+}
+.add-btn,.msg-btn{
+    width: 16.9rem;
+    height: 4.7rem;
+    border-radius: .3rem;
+    padding: .9rem 2rem;
+    gap: 2rem;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+.add-btn{
+    background: #FFA903;
+}
+.msg-btn{
+    background: #711745;
+    color: var(--color);
+    text-align: center;
+    margin-left: 1rem;
+}
+.contact-btn{
+    background: #711745;
+    color: var(--color);
+    text-align: center;
+    border-radius: .3rem;
+    padding: .9rem 2rem;
+    gap: 2rem;
+    border: none;
+    font-family: var(--font-family);
+    font-weight:var(--font-weight);
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    height: 4.7rem;
+    margin-top: -2rem;
+}
+.bx-user-plus,.bx-message-dots,.bx-phone{
+    font-size: 2.5rem;
+}
+.tags{
+    margin: -3rem 5.5rem;
+    gap: .5rem;
+}
+.tags button{
+    font-size: 1.7rem;
+    background: var(--bg-color);
+    border-radius: .3rem;
+    border: none;
+    color:var(--color);
+    padding: .5rem .9rem;
+gap: 1rem;
+}
+.tags-buttons{
+    margin-left: 66rem;
+}
+.tags-buttons button{
+    font-size: 1.7rem;
+    background: #cac9c9;
+    margin-right: .5rem;
+    padding: .8rem 1.5rem;
+    gap: 2.2rem;
+    border: none;
+    border-radius: .4rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+.car-specs1,.car-specs2{
+    display: flex;
+    margin-left: 4.5rem;
+
+}
+.car-specs1 span{
+    font-family: var(--font-family);
+font-weight: var(--font-family);
+font-size: 1.4rem;
+line-height: 2rem;
+color: #010104;
+opacity: 0.5;
+}
+.car-specs2 span{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #010104;
+    opacity: 0.5;
+}
+.car-specs1 div{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: .8rem;
+width: 20.4rem;
+height: 17rem;
+background: var(--color);
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.08);
+border-radius: 5px;
+font-size: 2rem;
+font-family: var(--font-family);
+margin-left: 1rem;
+}
+.car-specs1 img{
+    width: 2.5rem;
+}
+.car-specs2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    width: 20.4rem;
+    height: 17rem;
+    background: var(--color);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: var(--font-family);
+    margin-left: 1rem;
+
+}
+.car-specs2 img{
+    width: 2.5rem;
+}
+.car-specs2 i{
+    color: var(--bg-color);
+}
+.rectangles{
+    display: flex;
+    font-family: var(--font-family);
+}
+.rectangle1,.rectangle2{
+    height: 26.8rem;
+    box-shadow: 0 .3rem 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: .5rem;
+    padding: 6.4rem 2.5rem;
+    font-size: 2rem;
+}
+.rectangle1{
+    width: 72.5rem;
+    background: var(--bg-color);
+    margin-left: 5rem;
+    color:var(--color);
+}
+.rectangle2{
+    background: var(--color);
+    margin-left: 1rem;
+    width: 54.5rem;
+}
+.rectangle1 h4{
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+.rectangle1 button{
+    color: var(--color);
+    background: transparent;
+    float: right;
+    margin-top: 3rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    border: none;
+}
+.inspection{
+    color: #f5f5f5;
+    width: 20rem;
+    height: 8rem;
+    float: right;
+    margin-top: -9rem ;
+}
+.inspection div{
+    margin-left: 3rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 7.2rem;
+}
+.inspection span{
+    position: relative;
+    top: -80%;
+    left: 15%;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    line-height: 1.8rem;
+ } 
+.bx-plus-medical{
+    font-size: 5rem;
+}
+.rectangle2 span{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 2rem;
+    line-height: 3rem;
+    opacity: 0.5;
+}
+.rectangle2 .div1{
+    border: .1rem solid  var(--bg-color);
+    padding: .3rem 0 .3rem 1rem;
+    gap: .2rem;
+    width: 27rem;
+    background:var(--color);
+    box-shadow: 0 .3rem 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: .5rem;
+}
+.rectangle2 i{
+    color: var(--bg-color);
+}
+.rectangle2 .div2{
+    font-family: var(--font-family);
+font-weight: var(--font-weight);
+font-size: 4.8rem;
+line-height: 7.2rem;
+}
+.small-btn1, .small-btn2{
+    font-size: 2rem;
+    width: 18rem;
+    height: 4rem;
+    
+    border-radius: .4rem;
+    padding: .6rem;
+    gap: 1rem;
+    border: none;
+    
+}
+.small-btn1{
+    background: var(--bg-color);
+    color: var(--color);
+}
+.small-btn2{
+    background:var(--color);
+    border: .1rem solid  var(--bg-color);
+
+}
+.inspection-features{
+    width: 128rem;
+    padding: 4rem;
+    gap: 11rem;
+    height: 25rem;
+    background: var(--color);
+    box-shadow: 0 .3rem 1.5rem rgba(0, 0, 0, 0.08);
+    border-radius: .5rem;
+    margin: 1.5rem 0 0 5rem;
+    column-count: 3;
+}
+
+.inspection-features li{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.frame1,.frame2,.frame3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 35.8rem;
+    height: 15rem;
+
+}
+.vedio{
+   
+    margin-left: 5rem;
+}
+.vedio{
+    background-image: url(asset/red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3rem;
+    width: 128rem;
+    height: 65rem;
+    object-fit: cover;
+}
+
+.play-vedio{
+    color: #FAFAFA;
+    position: relative;
+    top: 45%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    font-size: 3rem;
+    background: rgba(87, 79, 79, 0.3);
+    backdrop-filter: blur(.2rem);
+    border-radius: 8rem;
+}
+.play-vedio .bx-play{
+    font-size: 5rem;
+    background: transparent;
+}
+.lable{
+    display: flex;
+}
+
+.lable span{
+    display: flex;
+    
+padding: .8rem 10rem .8rem .5rem;
+gap: 1rem;
+font-family: var(--font-family);
+font-weight: var(--font-weight);
+font-size: 2rem;
+line-height: 3rem;
+width: 42.1rem;
+height: 4rem;
+background: var(--color);
+box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.1);
+border-radius: .5rem;
+}
+.lable img{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.columns{
+    display: flex;
+    margin: -1rem 0rem 0rem 4rem;
+}
+.column1,.column2{
+    column-count: 2;
+}
+.column3{
+    display: flex;
+    flex-direction: column;
+}
+.column1,.column2,.column3{
+    font-family: var(--font-family);
+font-weight: var(--font-weight);
+font-size: 1.6rem;
+line-height: 3.6rem;
+color: #010104;
+opacity: 0.7;
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+width: 42.1rem;
+height: 29rem;
+background: var(--color);
+box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.1);
+border-radius: .5rem;
+}
+.handicapped-accessibility{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: .8rem;
+    width: 80rem;
+    height: 18rem;
+    background: var(--bg-color);
+    border-radius: .5rem;
+    margin-left: 5rem;
+}
+.handicapped-accessibility h1{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--color);
+}
+.handicapped-accessibility button{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #9e9ea0;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .8rem 1.1rem .8rem .8rem;
+    border: none;
+    gap: .4rem;
+    width: 22rem;
+    height: 3.5rem;
+    background: var(--color);
+    box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.1);
+    border-radius: .4rem;
+}
+.car-cards{
+    margin-left: 4rem;
+}
+.row1,.row2{
+    display: flex;
+}
+.car-cards div{
+    width: 41.5rem;
+    height: 25rem;
+    margin-left: 1.5rem;
+    border-radius: .3rem;
+}
+.car-cards img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:3788px) and (min-width:1230px){
+    html{
+        font-size: 62.5%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:1236px) and (min-width:1024px) {
+    html{
+        font-size: 50%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:950px) {
+    html{
+        font-size: 45%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:950px) and (min-width:780px){
+    html{
+        font-size: 40%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:780px) and (min-width:750px) {
+    html{
+        font-size: 35%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:750px) and (min-width:666px) {
+    html{
+        font-size: 30%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:666px) and (min-width:480px) {
+    html{
+        font-size: 25%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:480px) and (min-width:400px) {
+    html{
+        font-size: 20%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:400px) and (min-width:300px) {
+    html{
+        font-size: 15%;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
